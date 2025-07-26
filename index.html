@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earrings Gallery</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant font & icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- SVG Icon Sprite -->
+  <svg style="display: none;">
+    <use href="./asset/all-icons.svg#logo-ruku"></use>
+    <use href="./asset/all-icons.svg#icon-facebook"></use>
+    <use href="./asset/all-icons.svg#icon-instagram"></use>
+    <use href="./asset/all-icons.svg#icon-twitter"></use>
+    <use href="./asset/all-icons.svg#icon-whatsapp"></use>
+    <use href="./asset/all-icons.svg#icon-support"></use>
+    <use href="./asset/all-icons.svg#icon-faq"></use>
+    <use href="./asset/all-icons.svg#icon-about"></use>
+    <use href="./asset/all-icons.svg#icon-contact"></use>
+  </svg>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <svg width="42" height="42" class="logo-img"><use href="./asset/all-icons.svg#logo-ruku"></use></svg>
+        Ruku Jewels
+      </a>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#support-section">Support</a></li>
+        <li><a href="#faq-section">FAQ</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero glass" id="home">
+    <div class="hero-content">
+      <h1>
+        <span class="gradient-text">Elegant Earrings</span><br>
+        <span class="hero-subtitle">Collection</span>
+      </h1>
+      <p>Discover unique earrings & necklaces crafted with love.<br>Express your style with the finest premium designs.</p>
+      <div class="hero-btn-group">
+        <a href="#gallery" class="hero-btn main-btn">Shop Now</a>
+        <a href="#contact-section" class="hero-btn alt-btn">Get in Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://facebook.com" target="_blank" title="Facebook">
+          <svg class="social-icon" width="32" height="32"><use href="./asset/all-icons.svg#icon-facebook"></use></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Instagram">
+          <svg class="social-icon" width="32" height="32"><use href="./asset/all-icons.svg#icon-instagram"></use></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" title="Twitter">
+          <svg class="social-icon" width="32" height="32"><use href="./asset/all-icons.svg#icon-twitter"></use></svg>
+        </a>
+        <a href="https://whatsapp.com" target="_blank" title="WhatsApp">
+          <svg class="social-icon" width="32" height="32"><use href="./asset/all-icons.svg#icon-whatsapp"></use></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-frame">
+        <img src="./asset/hero.jpg" alt="Earrings Hero" />
+        <!-- SVG overlay decoration -->
+        <svg class="hero-svg" viewBox="0 0 300 120">
+          <ellipse cx="150" cy="60" rx="130" ry="50" fill="#f8bbd0" opacity="0.22"/>
+          <ellipse cx="180" cy="80" rx="70" ry="25" fill="#c2185b" opacity="0.15"/>
+          <ellipse cx="80" cy="90" rx="40" ry="15" fill="#fff0f5" opacity="0.2"/>
+          <ellipse cx="210" cy="40" rx="25" ry="10" fill="#c2185b" opacity="0.12"/>
+        </svg>
+        <!-- End SVG -->
+      </div>
+      <div class="hero-blur"></div>
+      <div class="hero-highlight"></div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Gallery Section -->
+    <section class="gallery-section glass" id="gallery">
+      <h2 class="gallery-title">Our <span class="gradient-text">Gallery</span></h2>
+      <div class="gallery">
+        <!-- Gallery Items -->
+        <div class="gallery-item card">
+          <img src="./asset/1.jpg" alt="Earring 1" onclick="openModal(this.src)" />
+          <h3>Royal Bloom</h3>
+          <p>Antique silver with multicolor gems</p>
+          <p class="price">৳ 350</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/2.jpg" alt="Earring 2" onclick="openModal(this.src)" />
+          <h3>Boho Charm</h3>
+          <p>Rustic bronze finish with bead drops</p>
+          <p class="price">৳ 280</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/3.jpg" alt="Earring 3" onclick="openModal(this.src)" />
+          <h3>Mirror Drop</h3>
+          <p>Shiny mirror work on oxidized base</p>
+          <p class="price">৳ 300</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/4.jpg" alt="Earring 4" onclick="openModal(this.src)" />
+          <h3>Lotus Leaf</h3>
+          <p>Floral art with silver polish</p>
+          <p class="price">৳ 250</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/5.jpg" alt="Earring 5" onclick="openModal(this.src)" />
+          <h3>Gold Glimmer</h3>
+          <p>Golden ethnic beauty for festivals</p>
+          <p class="price">৳ 390</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/6.jpg" alt="Earring 6" onclick="openModal(this.src)" />
+          <h3>Peacock Feather</h3>
+          <p>Colorful feather-shaped design</p>
+          <p class="price">৳ 380</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/7.jpg" alt="Earring 7" onclick="openModal(this.src)" />
+          <h3>Jhumka Classic</h3>
+          <p>Traditional bell-shaped beauty</p>
+          <p class="price">৳ 370</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/8.jpg" alt="Earring 8" onclick="openModal(this.src)" />
+          <h3>Tribal Gem</h3>
+          <p>Raw handmade design with bright stones</p>
+          <p class="price">৳ 290</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/9.jpg" alt="Earring 9" onclick="openModal(this.src)" />
+          <h3>Chandbali Spark</h3>
+          <p>Moon-shaped design with intricate work</p>
+          <p class="price">৳ 300</p>
+        </div>
+        <div class="gallery-item card">
+          <img src="./asset/10.jpg" alt="Earring 10" onclick="openModal(this.src)" />
+          <h3>Simple Gold Necklace</h3>
+          <p>Minimalist style with shining golden color</p>
+          <p class="price">৳ 550</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support, FAQ, About, Contact Sections -->
+    <section class="info-section glass" id="support-section">
+      <div class="info-card">
+        <div class="info-icon">
+          <svg width="38" height="38"><use href="./asset/all-icons.svg#icon-support"></use></svg>
+        </div>
+        <h4>Support</h4>
+        <p>For help, order issues, or inquiries, contact our dedicated support team anytime.</p>
+      </div>
+      <div class="info-card" id="faq-section">
+        <div class="info-icon">
+          <svg width="38" height="38"><use href="./asset/all-icons.svg#icon-faq"></use></svg>
+        </div>
+        <h4>FAQ</h4>
+        <p>Find answers to frequently asked questions about purchase, payment, and delivery.</p>
+      </div>
+      <div class="info-card" id="about-section">
+        <div class="info-icon">
+          <svg width="38" height="38"><use href="./asset/all-icons.svg#icon-about"></use></svg>
+        </div>
+        <h4>About</h4>
+        <p>Ruku Jewels crafts elegant jewelry blending tradition and modern style for all occasions.</p>
+      </div>
+      <div class="info-card" id="contact-section">
+        <div class="info-icon">
+          <svg width="38" height="38"><use href="./asset/all-icons.svg#icon-contact"></use></svg>
+        </div>
+        <h4>Contact</h4>
+        <p>Reach us by chat, email (<a href="mailto:support@ruku.com">support@ruku.com</a>), or phone (+880-123-456789).</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Earring enlarged view" />
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <svg width="40" height="40"><use href="./asset/all-icons.svg#logo-ruku"></use></svg>
+          <span>Earrings By Ruku</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#support-section">Support</a></li>
+          <li><a href="#faq-section">FAQ</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Earrings By Ruku. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><svg width="32" height="32"><use href="./asset/all-icons.svg#icon-facebook"></use></svg></a>
+          <a href="https://instagram.com" target="_blank"><svg width="32" height="32"><use href="./asset/all-icons.svg#icon-instagram"></use></svg></a>
+          <a href="https://twitter.com" target="_blank"><svg width="32" height="32"><use href="./asset/all-icons.svg#icon-twitter"></use></svg></a>
+          <a href="https://whatsapp.com" target="_blank"><svg width="32" height="32"><use href="./asset/all-icons.svg#icon-whatsapp"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar toggle for mobile
+    document.querySelector('.navbar-toggle').onclick = function() {
+      document.querySelector('.navbar-links').classList.toggle('active');
+    }
+
+    // Modal functions
+    function openModal(src) {
+      document.getElementById('imageModal').style.display = 'flex';
+      document.getElementById('modalImage').src = src;
+    }
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+    document.querySelector('.close').onclick = closeModal;
+  </script>
+</body>
+</html>
