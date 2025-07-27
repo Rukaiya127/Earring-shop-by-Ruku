@@ -1,4 +1,5 @@
 live server link -
 
 
-https://rukaiya127.github.io/Earring-Shop/
+
+https://rukaiya127.github.io/Earring-shop-by-Ruku/
